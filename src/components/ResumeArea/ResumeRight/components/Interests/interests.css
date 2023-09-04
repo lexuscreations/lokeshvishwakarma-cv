@@ -1,0 +1,58 @@
+section.interests.section {
+  padding: 1.5rem 0;
+  padding-top: 0 !important;
+}
+
+section.interests.section .section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  margin-bottom: var(--mb-3);
+}
+
+section.interests.section .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+section.interests.section .interests__container {
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: var(--mb-1);
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 968px) {
+  section.interests.section .interests__container {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 3.5rem;
+    justify-content: space-between;
+  }
+}
+section.interests.section .interests__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.interests.section .interests__icon {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-bottom: 0.25rem;
+}
+
+section.interests.section .interests__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+section.interests.section .interests__link {
+  display: block;
+}
+
+section.interests.section .interests__link:hover {
+  color: var(--title-color);
+}

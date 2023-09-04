@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <style>
+      :root {
+        --header-height: 3rem;
+
+        /*========== Colors ==========*/
+        --title-color: #0b0a0a;
+        --text-color: #403a3a;
+        --text-color-light: #707070;
+        --container-color: #fafafa;
+        --container-color-alt: #f0efef;
+        --body-color: #fcfcfc;
+
+        /*========== Font and typography ==========*/
+        --body-font: "Poppins", sans-serif;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 0.938rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+
+        /*========== Font weight ==========*/
+        --font-medium: 500;
+        --font-semi-bold: 600;
+
+        /*========== Margenes ==========*/
+        --mb-1: 0.5rem;
+        --mb-2: 1rem;
+        --mb-3: 1.5rem;
+
+        /*========== z index ==========*/
+        --z-tooltip: 10;
+        --z-fixed: 100;
+      }
+
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: subpixel-antialiased;
+      }
+
+      body {
+        font-family: var(--body-font);
+        font-size: var(--normal-font-size);
+        background-color: var(--body-color);
+        color: var(--text-color);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      body > .loading_container {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 4px;
+        font-size: 1.5rem;
+        display: none;
+      }
+    </style>
+    <title>LokeshVishwakarma-ReactJS-CV_Builder</title>
+    <meta
+      name="description"
+      content="Create your professional CV with LokeshVishwakarma's ReactJS CV Builder. Customize your resume easily with this powerful tool."
+    />
+    <meta
+      name="keywords"
+      content="LokeshVishwakarma, ReactJS, CV Builder, Resume, Professional CV, Customizable CV"
+    />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="/html2pdf.bundle.min.js"></script>
+    <script type="module" crossorigin src="/assets/index-e77b0cc1.js"></script>
+    <link rel="stylesheet" href="/assets/index-66076c45.css">
+  </head>
+  <body>
+    <div class="loading_container">
+      <h1>Loading...</h1>
+    </div>
+    <div id="root"></div>
+    
+  </body>
+</html>
