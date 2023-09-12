@@ -60,7 +60,7 @@ export const RESUME_DATA = {
     },
   ],
   profile__description: [
-    `[M.E.R.N] | SDE-2`,
+    `[M.E.R.N] | SDE`,
     `Full Stack Developer At Qloron Pvt. Ltd.`,
     `[ SQL | MongoDB ]`,
   ],
