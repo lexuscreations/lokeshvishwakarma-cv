@@ -1,0 +1,126 @@
+header.header {
+  width: 100%;
+  position: fixed;
+  bottom: -1.5px;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0px -2px 20px 0px rgb(108 108 108 / 20%);
+  transition: 0.3s;
+}
+
+header.header nav.nav.container {
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: var(--mb-3);
+  margin-right: var(--mb-3);
+}
+
+header.header nav.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 968px) {
+  header.header nav.nav > a.nav__logo,
+  header.header nav.nav > div.nav__toggle {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+  }
+
+  header.header nav.nav > div.nav__toggle {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  header.header nav.nav > div.nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: var(--body-color);
+    border-radius: 1rem 1rem 0 0;
+    z-index: var(--z-fixed);
+    transition: 0.3s;
+  }
+
+  header.header nav.nav > div.nav__menu.active {
+    bottom: calc(var(--header-height) + 0rem);
+    box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  header.header nav.nav > div.nav__menu > ul.nav__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  header.header nav.nav > div.nav__menu > ul.nav__list > li.nav__item {
+    text-align: center;
+  }
+
+  header.header
+    nav.nav
+    > div.nav__menu
+    > ul.nav__list
+    > li.nav__item
+    .nav__link {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+    font-weight: var(--font-medium);
+    align-items: center;
+  }
+
+  header.header
+    nav.nav
+    > div.nav__menu
+    > ul.nav__list
+    > li.nav__item
+    .nav__link:hover {
+    color: var(--title-color);
+  }
+
+  header.header
+    nav.nav
+    > div.nav__menu
+    > ul.nav__list
+    > li.nav__item
+    .nav__link.active {
+    color: var(--title-color);
+  }
+
+  header.header
+    nav.nav
+    > div.nav__menu
+    > ul.nav__list
+    > li.nav__item
+    .nav__link
+    > :is(i.nav__icon, svg.nav__icon) {
+    font-size: 1.2rem;
+    margin-bottom: var(--mb-1);
+  }
+}
+
+@media screen and (min-width: 968px) {
+  header.header {
+    display: none;
+  }
+
+  header.header nav.nav.container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header.header nav.nav > div.nav__menu > ul.nav__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 0.5rem;
+  }
+}

@@ -1,0 +1,18 @@
+section.profile.section {
+  padding: 1.5rem 0;
+}
+
+section.profile.section .section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+  margin-bottom: var(--mb-3);
+}
+
+@media screen and (min-width: 968px) {
+  .profile__description {
+    text-align: initial;
+  }
+}

@@ -1,14 +1,19 @@
-
 ### [Visit-portfolio-and-download-this-CV](https://lokeshvishwakarma-cv.netlify.app)
 
 #### - LokeshVishwakarma_CV_inDarkMode-minimal
+
 ![LokeshVishwakarma_CV_inDarkMode-minimal](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/8a3666ac-8a62-4927-8be8-bd3dacc9dfea)
+
 #### - LokeshVishwakarma_CV_inLightMode-minimal
+
 ![LokeshVishwakarma_CV_inLightMode-minimal](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/f15b7142-5713-4476-8add-c1230adbecc7)
 
 #### - LokeshVishwakarma-CV-inLightMode-full
+
 ![LokeshVishwakarma-CV-inLightMode-full](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/ece102c1-4286-4891-bb92-c742a3915bb7)
+
 #### - LokeshVishwakarma-CV-inDarkMode-full
+
 ![LokeshVishwakarma-CV-inDarkMode-full](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/481aaae6-f7bd-4efc-b9f0-8487c007f644)
 
 <hr />
@@ -98,3 +103,11 @@
         className="home__img"
       />
     )} */}
+
+<hr />
+
+If you are in development/testing mode and want to preview how this will appear after downloading:
+
+1. In `\src\config\index.jsx`, go to `APP_CONFIG` and set `add_intentionally_CV_adjust_class_on_body_for_testing` to `true`.
+
+2. In `\src\redux\isAdjustingState.js`, within the `initialState`, set `isAdjusting` to `true`.
