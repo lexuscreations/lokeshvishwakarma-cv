@@ -2,11 +2,11 @@
 
 #### - LokeshVishwakarma-CV-inLightMode-full
 
-![LokeshVishwakarma-CV-inLightMode-full]()
+![LokeshVishwakarma-CV-inLightMode-full](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/5647d8a0-623c-44f4-892b-4528a0e3737f)
 
 #### - LokeshVishwakarma-CV-inDarkMode-full
 
-![LokeshVishwakarma-CV-inDarkMode-full]()
+![LokeshVishwakarma-CV-inDarkMode-full](https://github.com/lexuscreations/lokeshvishwakarma-cv/assets/72046165/e468674d-3aa0-4abf-be8a-4b51cad2c1ba)
 
 <hr />
 
