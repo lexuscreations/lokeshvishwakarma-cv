@@ -1,0 +1,300 @@
+/*========== HOME ==========*/
+section.home {
+  position: relative;
+}
+
+section.home .section {
+  padding: 1.5rem 0;
+}
+
+section.home .section.home__container {
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+section.home .section.home__container .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 968px) {
+  section.home .section.home__container {
+    gap: 1.5rem;
+  }
+}
+
+/*========== Button Dark/Light ==========*/
+section.home > .change-theme-icon-btn {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section.home > .change-theme-icon-btn:hover {
+  color: var(--text-color-light);
+}
+
+/*========== Generate PDF button ==========*/
+section.home
+  .generate-pdf-icon-btn:not(.qualitySelectRange .generate-pdf-icon-btn) {
+  position: absolute;
+  left: 0;
+  top: 2.2rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+section.home
+  .generate-pdf-icon-btn:hover:not(
+    .qualitySelectRange .generate-pdf-icon-btn:hover
+  ) {
+  color: var(--text-color-light);
+}
+
+/*========== Classes modified to reduce size and print on A4 sheet ==========*/
+@media screen and (min-width: 968px) {
+  section.home .generate-pdf-icon-btn {
+    display: inline-block;
+  }
+}
+
+/*==========  ==========*/
+
+section.home .section.home__container .home__data {
+  gap: 0.5rem;
+  text-align: center;
+}
+
+section.home .section.home__container .home__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  justify-self: center;
+  margin-bottom: var(--mb-1);
+}
+
+section.home .section.home__container .home__title {
+  font-size: var(--h1-font-size);
+}
+
+section.home .section.home__container .home__profession {
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+/*==========  ==========*/
+
+section.home .section.home__container .home__address {
+  gap: 1rem;
+}
+
+section.home .section.home__container .section-title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+  letter-spacing: 0.35rem;
+}
+
+section.home .section.home__container .home__address .home__information {
+  display: flex;
+  align-items: start;
+  font-size: var(--small-font-size);
+}
+
+section.home
+  .section.home__container
+  .home__address
+  .home__information
+  .home__icon {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+section.home
+  .section.home__container
+  .home__address
+  .home__information
+  .home__link {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+}
+
+section.home
+  .section.home__container
+  .home__address
+  .home__information
+  .home__link:hover {
+  color: var(--title-color);
+}
+
+/* ------------------------------------------------------------- */
+
+.qualitySelectRange {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 3.6rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  background: #989898c1;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  border-radius: 0.4rem;
+}
+
+body.dark-theme .qualitySelectRange {
+  background-color: #4b4b4fc1;
+}
+
+.qualitySelectRange > .title {
+  font-weight: 900;
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #989898c1;
+  border-radius: 0.4rem;
+  padding: 0.1rem 0.2rem 0.1rem 0.2rem;
+}
+
+.qualitySelectRange .labelCon {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.qualitySelectRange .labelCon > span {
+  display: block;
+}
+
+.qualitySelectRange .labelCon > span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 26.5%;
+}
+
+.qualitySelectRange .labelCon > span:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 48.7%;
+}
+
+.qualitySelectRange .labelCon > span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 71.5%;
+}
+
+.qualitySelectRange .inputCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-block: 0.8rem 0.1rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"] {
+  width: 95%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.qualitySelectRange .inputCon input[type="range"]:focus {
+  outline: none;
+}
+
+.qualitySelectRange
+  .inputCon
+  input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #707070;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: rgb(59, 59, 59);
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 50%;
+}
+
+.qualitySelectRange .inputCon input[type="range"]:hover::-webkit-slider-thumb {
+  border: 0.1rem solid #ffffffb6;
+  outline-offset: 0.125rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"]:active::-webkit-slider-thumb {
+  border: 0.1rem solid #ffffffb6;
+  outline: 3px solid #cececeb6;
+  outline-offset: 0.125rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"]::-moz-range-track {
+  background-color: #707070;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"]::-moz-range-thumb {
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -5px;
+  background-color: rgb(59, 59, 59);
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 50%;
+}
+
+.qualitySelectRange .inputCon input[type="range"]:hover::-webkit-slider-thumb {
+  border: 0.1rem solid #ffffffb6;
+  outline-offset: 0.125rem;
+}
+
+body.dark-theme
+  .qualitySelectRange
+  .inputCon
+  input[type="range"]::-webkit-slider-thumb {
+  border: 0.1rem solid #ffffffb6;
+  outline-offset: 0.125rem;
+}
+
+.qualitySelectRange .inputCon input[type="range"]:active::-webkit-slider-thumb {
+  border: 0.1rem solid #ffffffb6;
+  outline: 3px solid #cececeb6;
+  outline-offset: 0.125rem;
+}
+
+section.home .qualitySelectRange .generate-pdf-icon-btn {
+  cursor: pointer;
+}
+
+body.dark-theme .qualitySelectRange .generate-pdf-icon-btn {
+  color: #000000;
+}
+
+.qualitySelectRange .generate-pdf-icon-btn:hover {
+  color: #000000;
+}
+
+body.dark-theme .qualitySelectRange .generate-pdf-icon-btn:hover {
+  color: var(--text-color);
+}
