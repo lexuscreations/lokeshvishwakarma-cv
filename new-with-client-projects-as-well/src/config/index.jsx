@@ -92,7 +92,7 @@ export const RESUME_DATA = {
     firstRow: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     secondRow: [
       { name: "React.js" },
-      { name: "Next.js", percent: "30%" },
+      { name: "Next.js", percent: "50%" },
       { name: "ReactNative", percent: "50%" },
     ],
     thirdRow: [{ name: "Express.js" }, { name: "Node.js" }],
@@ -100,7 +100,7 @@ export const RESUME_DATA = {
   experienceData: [
     {
       designation: "Full Stack Developer [M.E.R.N]",
-      duration: "From June 2021 to - Present (2 years)",
+      duration: "From June 2021 to - Present (3.5 years)",
       company_name: "Qloron Pvt Ltd",
       company_url: "https://qloron.com/",
       company_location: "Nagpur, Maharashtra, India",
@@ -169,7 +169,7 @@ export const RESUME_DATA = {
   skillsRatingData: [
     { skill_name: "HTML, CSS, JS", skillPercent: "90%" },
     { skill_name: "ReactNative", skillPercent: "50%" },
-    { skill_name: "NextJS", skillPercent: "30%" },
+    { skill_name: "NextJS", skillPercent: "50%" },
     { skill_name: "Remaining", skillPercent: "70%" },
   ],
   personalProjectsData: [
